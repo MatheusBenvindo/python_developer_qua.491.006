@@ -6,7 +6,7 @@
 #FIXME - trecho a ser corrigido
 #REVIEW - trecho a ser revisado
 #ANCHOR - trecho a ser ancorado
-#SECTION - trecho a ser separadodd
+#SECTION - trecho a ser separado
 
 import os 
 #declaração de variáveis
