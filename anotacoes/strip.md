@@ -1,0 +1,1 @@
+.strip() # Elima valores nulos. (Como a barra de espaço)
