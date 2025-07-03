@@ -16,7 +16,8 @@ try:
     print("Texto adicionado com sucesso!")
 
     with open(f"{arquivo}.txt", "r", encoding="utf-8") as f:
-        texto = f.read()
-        
+        texto_final = f.read()
+    print(texto_final)
+
 except Exception as e:
     print(f"Não foi possivel atualizar arquivo. {e}")

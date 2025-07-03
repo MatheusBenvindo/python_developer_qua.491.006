@@ -1,0 +1,173 @@
+[
+    {
+        "nome": "João Silva",
+        "idade": 30,
+        "email": "joao.silva@email.com",
+        "profissão": "QA",
+        "enderecos": [
+            {
+                "tipo": "residencial",
+                "rua": "Rua das Flores",
+                "numero": 123,
+                "cidade": "São Paulo"
+            },
+            {
+                "tipo": "comercial",
+                "rua": "Avenida Central",
+                "numero": 456,
+                "cidade": "Rio de Janeiro"
+            }
+        ],
+        "ativo": true
+    },
+    {
+        "nome": "Maria Oliveira",
+        "idade": 28,
+        "email": "maria.oliveira@email.com",
+        "profissão": "Desenvolvedora",
+        "enderecos": [
+            {
+                "tipo": "residencial",
+                "rua": "Rua das Palmeiras",
+                "numero": 321,
+                "cidade": "Belo Horizonte"
+            }
+        ],
+        "ativo": true
+    },
+    {
+        "nome": "Carlos Souza",
+        "idade": 35,
+        "email": "carlos.souza@email.com",
+        "profissão": "Analista de Dados",
+        "enderecos": [
+            {
+                "tipo": "residencial",
+                "rua": "Rua do Sol",
+                "numero": 789,
+                "cidade": "Curitiba"
+            }
+        ],
+        "ativo": false
+    },
+    {
+        "nome": "Ana Paula",
+        "idade": 26,
+        "email": "ana.paula@email.com",
+        "profissão": "Designer",
+        "enderecos": [
+            {
+                "tipo": "residencial",
+                "rua": "Rua das Acácias",
+                "numero": 456,
+                "cidade": "Porto Alegre"
+            }
+        ],
+        "ativo": true
+    },
+    {
+        "nome": "Pedro Lima",
+        "idade": 40,
+        "email": "pedro.lima@email.com",
+        "profissão": "Gerente de Projetos",
+        "enderecos": [
+            {
+                "tipo": "residencial",
+                "rua": "Rua das Laranjeiras",
+                "numero": 654,
+                "cidade": "Salvador"
+            }
+        ],
+        "ativo": false
+    },
+    {
+        "nome": "Juliana Costa",
+        "idade": 32,
+        "email": "juliana.costa@email.com",
+        "profissão": "Testadora",
+        "enderecos": [
+            {
+                "tipo": "residencial",
+                "rua": "Rua das Hortências",
+                "numero": 852,
+                "cidade": "Fortaleza"
+            }
+        ],
+        "ativo": true
+    },
+    {
+        "nome": "Rafael Almeida",
+        "idade": 29,
+        "email": "rafael.almeida@email.com",
+        "profissão": "Desenvolvedor",
+        "enderecos": [
+            {
+                "tipo": "residencial",
+                "rua": "Rua das Oliveiras",
+                "numero": 951,
+                "cidade": "Recife"
+            }
+        ],
+        "ativo": true
+    },
+    {
+        "nome": "Fernanda Rocha",
+        "idade": 27,
+        "email": "fernanda.rocha@email.com",
+        "profissão": "Analista de Sistemas",
+        "enderecos": [
+            {
+                "tipo": "residencial",
+                "rua": "Rua das Magnólias",
+                "numero": 753,
+                "cidade": "Manaus"
+            }
+        ],
+        "ativo": false
+    },
+    {
+        "nome": "Lucas Martins",
+        "idade": 31,
+        "email": "lucas.martins@email.com",
+        "profissão": "Engenheiro de Software",
+        "enderecos": [
+            {
+                "tipo": "residencial",
+                "rua": "Rua das Orquídeas",
+                "numero": 357,
+                "cidade": "Brasília"
+            }
+        ],
+        "ativo": true
+    },
+    {
+        "nome": "Patrícia Mendes",
+        "idade": 34,
+        "email": "patricia.mendes@email.com",
+        "profissão": "Product Owner",
+        "enderecos": [
+            {
+                "tipo": "residencial",
+                "rua": "Rua das Violetas",
+                "numero": 159,
+                "cidade": "Natal"
+            }
+        ],
+        "ativo": true
+    },
+    {
+        "nome": "Eduardo Pereira",
+        "idade": 38,
+        "email": "eduardo.pereira@email.com",
+        "profissão": "Scrum Master",
+        "enderecos": [
+            {
+                "tipo": "residencial",
+                "rua": "Rua das Azaleias",
+                "numero": 258,
+                "cidade": "Belém"
+            }
+        ],
+        "ativo": false
+    }
+]
