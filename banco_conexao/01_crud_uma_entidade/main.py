@@ -33,9 +33,9 @@ def main():
                 md.pesquisar_pessoas(session, Pessoa)
                 continue
             case "4":
-                pass
+                md.alterar_dados (session, Pessoa)
             case "5":
-                pass
+                md.excluir_pessoa (session, Pessoa)
             case "6":
                 print("Programa encerrado.")
                 break
