@@ -1,5 +1,7 @@
 from datetime import datetime
 import os
+import pandas
+import openpyxl
 
 limpar = lambda: os.system("cls" if os.name == "nt" else "clear")
 
@@ -197,8 +199,34 @@ def excluir_pessoa(session, Pessoa):
                 print("Pessoa excluída com sucesso!")
             else:
                 print("Exclusão cancelada.")
-        else:
+        else: 
             print("Pessoa não encontrada.")
     except Exception as e:
         print(f"Não foi possível excluir pessoa. {e}.")
 
+                
+def exportar_excel(session, Pessoa):
+    try:
+        pessoas = session.query(Pessoa).all()
+        if not pessoas:
+            print("Nenhuma pessoa cadastrada para exportar.")
+            return
+
+        # Monta lista de dicionários para DataFrame
+        dados = [{
+            "ID": pessoa.id_pessoa,
+            "Nome": pessoa.nome,
+            "E-mail": pessoa.email,
+            "Data de Nascimento": pessoa.data_nascimento.strftime('%d/%m/%Y')
+        } for pessoa in pessoas]
+
+        # Cria a pasta se não existir
+        pasta_exportacao = "planilhas exportadas"
+        if not os.path.exists(pasta_exportacao):
+            os.makedirs(pasta_exportacao)
+        nome_arquivo = os.path.join(pasta_exportacao, "pessoas_exportadas.xlsx")
+        df = pandas.DataFrame(dados)
+        df.to_excel(nome_arquivo, index=False)
+        print(f"Dados exportados com sucesso para {nome_arquivo}.")
+    except Exception as e:
+        print(f"Não foi possível exportar os dados. {e}.")

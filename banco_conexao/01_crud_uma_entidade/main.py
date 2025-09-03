@@ -3,6 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 import entidades as ent
 import modulo as md
+import pandas
 
 def main():
     engine = create_engine("sqlite:///01_crud_uma_entidade/database/db_crud.db")
@@ -19,7 +20,8 @@ def main():
         print("3 - Pesquisar pessoas")
         print("4 - Alterar dados de uma pessoa")
         print("5 - Excluir uma pessoa")
-        print("6 - Sair do programa")
+        print("6 - Exportar dados para Excel")
+        print("7 - Sair do programa")
         opcao = input("Informe a opção desejada: ").strip()
         md.limpar()
         match opcao:
@@ -37,6 +39,8 @@ def main():
             case "5":
                 md.excluir_pessoa (session, Pessoa)
             case "6":
+                md.exportar_excel(session, Pessoa)
+            case "7":
                 print("Programa encerrado.")
                 break
             case _:
