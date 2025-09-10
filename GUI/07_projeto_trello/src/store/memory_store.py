@@ -4,6 +4,7 @@ from models.item import Item
 from models.user import User
 from store.data_store import DataStore
 
+
 class InMemoryStore(DataStore):
     def __init__(self):
         self.boards = {}
@@ -38,7 +39,9 @@ class InMemoryStore(DataStore):
         return [l for lists in self.board_lists.values() for l in lists]
 
     def remove_list(self, board: int, id: int):
-        self.board_lists[board] = [l for l in self.board_lists[board] if l.board_list_id != id]
+        self.board_lists[board] = [
+            l for l in self.board_lists[board] if l.board_list_id != id
+        ]
 
     def add_user(self, user: User):
         self.users[user.name] = user
@@ -70,3 +73,12 @@ class InMemoryStore(DataStore):
 
     def remove_item(self, board_list: int, id: int):
         self.items[board_list] = [i for i in self.items[board_list] if i.item_id != id]
+
+    # ✅ adicionados
+    def update_list(self, list_obj, update: dict):
+        for k, v in update.items():
+            setattr(list_obj, k, v)
+
+    def update_item(self, item, update: dict):
+        for k, v in update.items():
+            setattr(item, k, v)
